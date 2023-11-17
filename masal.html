@@ -3,6 +3,28 @@
 
 <meta http-equiv="content-type" content="text/html;charset=utf-8" />
 <head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('back1.jpg'); /* Arkaplan resmi ekleme */
+            background-size: cover; /* Resmin ekran boyutuna sığacak şekilde ayarlar */
+        }
+
+        .container {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8); /* Container'ın arkaplanını hafifçe beyaz yaptık */
+            border-radius: 10px; /* Kenarlara yuvarlaklık ekledik */
+        }
+
+        label,
+        input {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+    </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Masal Sayfası</title>
@@ -86,6 +108,20 @@
             Köylüler bakarlar ki dağın kıpırdadığı falan yok, hocayla dalga geçmek için bir şeyler söyleyeceği anda hoca oturduğu yerden kalkar ve şöyle der;  “Hemşerilerim, bilirsiniz ki bizlerde kibir olmaz. Ne yapalım, o dağ bizim ayağımıza gelmiyorsa biz onun ayağına gideriz.” Diyerek dağa doğru yürümeye başlar.</p>
         <img src="resim4.jpg" alt="Resim 4">
     </section>
+
+    <audio autoplay loop>
+        <source src="sarki.mp3" type="audio/mp3">
+        Tarayıcınız audio elementini desteklemiyor.
+    </audio>
+
+    <script>
+        // Kullanıcıya ses kontrolü eklemek için JavaScript
+        var audio = new Audio('sarki.mp3');
+        audio.loop = true; // Müziği döngüye al
+        audio.volume = 0.5; // İstenirse ses seviyesini ayarla (0.0 - 1.0)
+        audio.play(); // Otomatik olarak çalmaya başla
+    </script>
+
 </body>
 
 
